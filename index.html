@@ -1,0 +1,31 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+<script>
+	$(document).ready(function(e) {
+		$('img[usemap]').rwdImageMaps();
+	});
+</script>
+<style>
+	.img_wrap{position:relative; background:url('http://drive.google.com/uc?id=19ITz_sPx9MbfsFUjrRBpMVi85NVcxoMF') no-repeat center top; background-size:auto 100%; overflow:hidden;}/* 전체 배경 */
+	.img_box{position:relative; width:960px; max-width:100%; margin:0 auto; padding:0; overflow:hidden;}
+	.img_box img{max-width:100%; border:0; padding:0; margin:0;}
+	.img_box .movie_box{position:absolute; top:33.45%; left:0; right:0; width:83%; padding:0; margin:0 auto; overflow:hidden;height: 10.5%;}
+	.img_box .movie_box div{padding:0; margin:0;}
+	.img_box .movie_box div iframe{width: 100%;height: 100%;}
+</style>
+<div class="img_wrap">
+	<div class="img_box">
+		<img src="http://drive.google.com/uc?id=1rnYcpfZkBVdoQ5Jq7eN8Nn4ZQVLrCTx9" alt="" usemap="#map1" /><!-- 전체 이미지 -->
+		<map name="map1">
+			<area shape="rect" coords="497,1226,889,1304" href="https://bit.ly/3ah1n6A" target="_blank"><!-- Online 1:1 직무상담회 사전신청 -->
+			<area shape="rect" coords="77,4125,457,4204" href="https://careers.ncsoft.com" target="_blank"><!-- 채용홈페이지 지원 -->
+			<area shape="rect" coords="511,4124,891,4204" href="https://bit.ly/3ah1n6A" target="_blank"><!-- Online 1:1 직무상담회 사전신청 -->
+			<area shape="rect" coords="84,1913,332,2057" href="https://www.youtube.com/embed/6_JzMiFaWgw1" target="i"><!-- 서브 동영상 링크1 -->
+			<area shape="rect" coords="360,1914,607,2057" href="https://www.youtube.com/embed/6_JzMiFaWgw2" target="i"><!-- 서브 동영상 링크2 -->
+			<area shape="rect" coords="635,1914,883,2057" href="https://www.youtube.com/embed/6_JzMiFaWgw3" target="i"><!-- 서브 동영상 링크3 -->
+		</map>
+		<div class="movie_box">
+			<div><iframe name="i" src="https://www.youtube.com/embed/6_JzMiFaWgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!-- 메인 동영상 -->
+		</div>
+	</div>
+</div>
